@@ -8,7 +8,6 @@ local lsp_component = {
 			if type(msg) == "boolean" or #msg == 0 then
 				return "LS Inactive"
 			end
-
 			return msg
 		end
 

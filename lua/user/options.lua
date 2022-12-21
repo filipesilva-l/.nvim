@@ -7,6 +7,7 @@ vim.opt.title = false
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.relativenumber = true
+vim.opt.number = true
 vim.opt.wrap = false
 vim.opt.spell = false
 vim.opt.scrolloff = 5

@@ -4,6 +4,9 @@ return require("packer").startup(function(use)
 	-- packer
 	use("wbthomason/packer.nvim")
 
+	-- random
+	use("eandrju/cellular-automaton.nvim")
+
 	-- utils
 	use("nvim-lua/plenary.nvim")
 
@@ -39,6 +42,8 @@ return require("packer").startup(function(use)
 			require("todo-comments").setup({})
 		end,
 	})
+
+	use("tpope/vim-abolish")
 
 	-- line
 	use({
