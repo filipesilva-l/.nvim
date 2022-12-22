@@ -29,7 +29,7 @@ M.setup = function()
 
 	null_ls.setup({
 		sources = {
-			--prettier,
+			prettier,
 			formatting.stylua,
 		},
 		on_attach = function(client, bufnr)
@@ -44,7 +44,6 @@ M.setup = function()
 				})
 			end
 		end,
-
 		debug = true,
 	})
 end

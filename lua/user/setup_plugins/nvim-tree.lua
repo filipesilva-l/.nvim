@@ -9,7 +9,16 @@ M.setup = function()
 					{ key = "h", action = "close_node" },
 					{ key = "v", action = "vsplit" },
 					{ key = "s", action = "split" },
+					{ key = "e", action = "" },
 				},
+			},
+		},
+		actions = {
+			change_dir = {
+				enable = false,
+			},
+			open_file = {
+				quit_on_open = true,
 			},
 		},
 	})

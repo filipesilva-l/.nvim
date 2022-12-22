@@ -24,7 +24,7 @@ end
 
 local opts = { noremap = true, silent = true }
 
-local on_attach = function(client, bufnr)
+M.on_attach = function(client, bufnr)
 	vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
 
 	local bufopts = { noremap = true, silent = true, buffer = bufnr }
@@ -60,7 +60,7 @@ M.setup = function()
 	mason_lspconfig.setup_handlers({
 		function(server_name)
 			local opts_lsp = {
-				on_attach = on_attach,
+				on_attach = M.on_attach,
 				capabilities = capabilities,
 			}
 
